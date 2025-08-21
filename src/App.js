@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import JournalEntries from "./Pages/JournalEntries";
@@ -8,7 +8,7 @@ import JournalsInput from "./Pages/JournalsInput";
 
 export default function App() {
   return (
-    
+    <>
     <Router>
       <nav style={{ padding: "10px", background: "#eee" }}>
         <Link to="/" style={{ marginRight: "15px" }}>Journal Entries</Link>
@@ -24,5 +24,6 @@ export default function App() {
          <Route path="/journalsinput" element={<JournalsInput />} />
       </Routes>
     </Router>
+    </>
   );
 }
